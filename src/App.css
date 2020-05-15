@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Russo+One");
+
+
+#main {
+    background: #95bd93;
+    height: 100vh;
+}
+#title {
+    text-align: center;
+    background-color: #337c4f;
+    padding: 20px;
+    margin: 0;
+    font-family: Russo One;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#markdown-previewer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#editor {
+    
+    width: 35vw;
+    height: 80vh;
+    background-color: #cee2ce;
+    border: 1px solid #1d2f2f;
+    box-shadow: 1px 1px 10px 2px #3a5f5f;
+    padding-left: 5px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#preview {
+    width: 45vw;
+    height: 80vh;
+    overflow: scroll;
+    background-color: #cee2ce;;
+    border: 1px solid #1d2f2f;
+    box-shadow: 1px 1px 10px 2px #aecfb0;
+    padding-left: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+.toolbar {
+    position: relative;
+    background-color: #4d9c65;
+    padding: 4px 4px 3px 3px;
+    border: 1px solid #1d2f2f;
+    box-shadow: 1px 1px 10px 2px #b6cfb3;
+    font-family: Russo One;
+    font-size: 15px; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+#preview blockquote {
+    border-left: 3px solid #224B4B;
+    color: #224B4B;
+    padding-left: 5px;
+    margin-left: 25px; }
+  #preview code {
+    background: rgb(234, 238, 240);
+    padding: 1px 4px 2px 4px;
+    font-size: 12px;
+    font-weight: bold; }
+  #preview pre {
+    background: rgb(234, 238, 240);
+    padding: 5px 0 5px 5px; }
+
+  
+
